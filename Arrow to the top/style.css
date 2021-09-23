@@ -1,0 +1,40 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 30px 0;
+  text-align: center;
+  font-size: clamp("35px,5vw,90px");
+}
+.content {
+  padding: 0 20vw;
+  font-size: 20px;
+  text-align: justify;
+}
+.top-btn {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #333;
+  background: #fff;
+  /* on centre l'image dans le bouton */
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.top-btn img {
+  width: 50px;
+  height: 50px;
+}

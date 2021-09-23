@@ -1,0 +1,83 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  overflow: hidden;
+}
+.container {
+  margin: 2rem;
+  height: 600px;
+  width: 600px;
+  /* Pour le premier rendu */
+  /* background-color: blue; */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  /* En lien avec la balise clipPath du svg */
+  clip-path: url(#map-path);
+}
+svg {
+  height: 0;
+  width: 0;
+}
+.color-blue,
+.color-white,
+.color-red {
+  position: absolute;
+  height: 100%;
+  width: 33.3%;
+}
+.color-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgb(43, 56, 240), blue);
+  animation: slide-down 6s;
+}
+.color-white {
+  position: absolute;
+  bottom: 0;
+  left: 33.4%;
+  width: 33.3%;
+  height: 100%;
+  background: #fff;
+  animation: slide-top 6s;
+}
+.color-red {
+  top: 0;
+  right: 0;
+  background: linear-gradient(rgb(226, 22, 22), red);
+  animation: slide-down 6s;
+}
+
+@keyframes slide-down {
+  0% {
+    top: -100%;
+  }
+}
+@keyframes slide-top {
+  0% {
+    bottom: -100%;
+  }
+}
+#eiffel {
+  height: 235px;
+  width: 120px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 100px;
+  animation: spin 3s 4.2s forwards;
+  transform: scale(0);
+}
+@keyframes spin {
+  80% {
+    transform: scale(1.6) rotate(360deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+} ;

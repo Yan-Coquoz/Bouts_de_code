@@ -1,0 +1,24 @@
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em;
+}
+.container2 {
+  padding: 12em 0;
+  background-image: url("./Saly-13.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

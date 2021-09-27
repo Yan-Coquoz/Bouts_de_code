@@ -17,10 +17,11 @@ const sketch = () => {
 
     // L'épaisseur de la ligne sera d'1% de la largeur
     context.lineWidth = width * 0.01;
-    // Pour une meilleur résolution on rend les valeurs dynamique, elles seront à 10% de la taille du canvas donc (0.1)
+    // Pour une meilleur résolution on rend les valeurs dynamique, elles seront à 10% de la taille du canvas donc (0.1) car 1 = 100%
     /**
-     * W = 60 soit 10% de 600
-     * donc W = width * .1
+     * widthSquare = 60px soit 10% de 600px(des anciennes dimensions)calcul du produit en croix.
+     * 600px = 100% ; 60px =  ?% ; donc pour trouver 10% : (60 * 100) / 600
+     * donc widthSquare = width * 0.1
      * c'est donc 10% de la largeur du canvas
      */
     const widthSquare = width * 0.1;
@@ -30,7 +31,7 @@ const sketch = () => {
     /**
      * on remplace la valeur en dur de x et y
      * qui deviendra ix et iy
-     * 100 / 600 = 17%
+     * 100 / 600 = 0.16 donc environ 17%
      */
     const ix = width * 0.17;
     const iy = height * 0.17;
@@ -58,10 +59,10 @@ const sketch = () => {
         if (0.5 == 0.5 % random) {
           context.beginPath();
           context.rect(
-            x + off / 4,
-            y + off / 4,
-            widthSquare - off / 2,
-            heightSquare - off / 2,
+            x + off / 2,
+            y + off / 2,
+            widthSquare - off,
+            heightSquare - off,
           );
           context.stroke();
         }

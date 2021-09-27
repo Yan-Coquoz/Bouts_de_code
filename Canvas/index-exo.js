@@ -13,7 +13,11 @@ const settings = {
 
 const sketch = () => {
   return ({ context, width, height }) => {
-    context.fillStyle = "white";
+    // createLinearGradient(x,y,x1,y1) selon les dimensions de settings
+    const gradient = context.createLinearGradient(1080, 1080, 100, 100);
+    gradient.addColorStop(0, "blue");
+    gradient.addColorStop(1, "yellow");
+    context.fillStyle = gradient;
     context.fillRect(0, 0, width, height);
   };
 };

@@ -48,6 +48,7 @@ const sketch = () => {
       for (let j = 0; j < 5; j++) {
         // Math.random génère un nombre entre 0 et 1
         const random = Math.random();
+
         // permet de faire un carré + un espace * en plus
         x = ix + (widthSquare + gap) * i;
         y = iy + (heightSquare + gap) * j;

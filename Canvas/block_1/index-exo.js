@@ -14,11 +14,13 @@ const settings = {
 const sketch = () => {
   return ({ context, width, height }) => {
     // createLinearGradient(x,y,x1,y1) selon les dimensions de settings
-    const gradient = context.createLinearGradient(1080, 1080, 100, 100);
-    gradient.addColorStop(0, "blue");
+    const gradient = context.createLinearGradient(1080, 1080, 400, 400);
+    gradient.addColorStop(0, "red");
     gradient.addColorStop(1, "#4287f5");
     context.fillStyle = gradient;
     context.fillRect(0, 0, width, height);
+
+    context.lineWidth = width * 0.01;
 
     const longCarre = width * 0.1; // = 10% de la width
     const hautCarre = height * 0.1;

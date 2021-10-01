@@ -1,0 +1,23 @@
+{
+  "name": "bouts-de-codes",
+  "version": "1.0.0",
+  "description": "- [Animation de Background](Animation%20BG/index.html)\r - [Animation de Cartes (Cards)](Annimation%20Card/index.html)\r - [Arrow to the top](Arrow%20to%20the%20top/index.html)\r - [Barre de compétences](barre%20de%20competence/index.html)\r - [Animation de Bordure](Border%20animation/index.html)\r - [Galaxie](galaxie/index.html)\r - [Horloge](horloge/index.html)\r - [Input eye](input%20eye/index.html)\r - [Livre](Livre/index.html)\r - [Loader](Loader/index.html)\r - [Dropdown menu](menu%20dropdown/index.html)\r - [Parallaxe](Parallaxe/index.html)\r - [Pays et drapeau](pays%20avec%20drapeau/index.html)\r - [Zoom sur image](Zoom%20sur%20image/index.html)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yan-Coquoz/Effet_Css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yan-Coquoz/Effet_Css/issues"
+  },
+  "homepage": "https://github.com/Yan-Coquoz/Effet_Css#readme",
+  "dependencies": {
+    "canvas-sketch": "^0.7.4"
+  }
+}

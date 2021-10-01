@@ -9,48 +9,86 @@
 </head>
 
 <body>
-    <!-- Zone de travail de notre canvas -->
-    <canvas width="600" height="600"></canvas>
+    <!-- Zone de travail de notre canvas de base-->
+    <!-- <canvas width="600" height="600"></canvas> -->
     <ul>
         <li>
-            <h2> index_1</h2>
-            <p>Base de canvas avec le rectangle et le cercle</p>
-        </li>
-        <li>
-            <h2> index_2</h2>
-            <p>Les tableaux et boucles ainsi que les conditions</p>
-            for et foreach pour les tableaux, puis pour les conditions if / else
-        </li>
-        <li>
-            <h2>index_3</h2>
-            <article>
-                <p>Installation d'un package : canvas-sketch
-                    <a
-                        href="https://github.com/mattdesl/canvas-sketch/blob/24f6bb2bbdfdfd72a698a0b8a0962ad843fb7688/docs/cli.md">documentation</a>
-                </p>
-                <p>Pour lancer le serveur : <strong>canvas-sketch nomDuFichier.js</strong> si le fichier n'est pas créé,
-                    il suffit
-                    de
-                    rajouter <strong>--new</strong> en bout de commande
-                </p>
-                <p>On peut sauvegarder ce que l'on dessin avec la commande ctrl+s, un fichier.png est générer à partir
-                    du
-                    canvas</p>
-                <p>Avec cette commande : <strong>canvas-sketch nomDuFichier.js --output=output/01</strong> tout nos
-                    fichiers
-                    sauvegarder iront dans ce dossier. Cela rafraichi la page!</p>
-                <p>Canvas sketch nous permet aussi de faire des impressions. Dans notre objet settings, il suffit de
-                    changer la valeur de notre propriété, au lieu d'un tableau, mettre <strong>"A4"</strong>,d'ajouter
-                    de la
-                    densiter pour nos pixels avec <strong>pixelsPerInch:300</strong>
-                    et pour l'orientation <strong>orientation:"landscape"</strong></p>
-                <p>Tout est disponible <a
-                        href="https://github.com/mattdesl/canvas-sketch/blob/24f6bb2bbdfdfd72a698a0b8a0962ad843fb7688/docs/api.md#settings">ici</a>
-                </p>
-            </article>
+            <h2>Block 1</h2>
+            <ul>
 
+                <li>
+                    <h2> index_1</h2>
+                    <p>Base de canvas avec le rectangle et le cercle</p>
+                </li>
+                <li>
+                    <h2> index_2</h2>
+                    <p>Les tableaux et boucles ainsi que les conditions</p>
+                    for et foreach pour les tableaux, puis pour les conditions if / else
+                </li>
+                <li>
+                    <h2>index_3</h2>
+                    <article>
+                        <p>Installation d'un package :
+                            <a href="https://github.com/mattdesl/canvas-sketch/blob/24f6bb2bbdfdfd72a698a0b8a0962ad843fb7688/docs/cli.md"
+                                alt="site de github" hreflang="EN" rel="noopener" behavior
+                                target="_blank">canvas-sketch</a>
+                        </p>
+                        <p>Pour lancer le serveur : <strong>canvas-sketch nomDuFichier.js</strong> si le fichier n'est
+                            pas
+                            créé,
+                            il suffit
+                            de
+                            rajouter <strong>--new</strong> (pour créer un nouveau fichier) et <strong>--open</strong>
+                            (pour l'ouvrir) en bout de commande
+                        </p>
+                        <p>On peut sauvegarder ce que l'on dessin avec la commande ctrl+s, un fichier.png est générer à
+                            partir
+                            du
+                            canvas</p>
+                        <p>Avec cette commande : <strong>canvas-sketch nomDuFichier.js --output=output/01</strong> tout
+                            nos
+                            fichiers
+                            sauvegarder iront dans ce dossier. Cela rafraichi la page!</p>
+                        <p>Canvas sketch nous permet aussi de faire des impressions. Dans notre objet settings, il
+                            suffit de
+                            changer la valeur de notre propriété, au lieu d'un tableau, mettre
+                            <strong>"A4"</strong>,d'ajouter
+                            de la
+                            densiter pour nos pixels avec <strong>pixelsPerInch:300</strong>
+                            et pour l'orientation <strong>orientation:"landscape"</strong>
+                        </p>
+                        <p>Tout est disponible sur <a
+                                href="https://github.com/mattdesl/canvas-sketch/blob/24f6bb2bbdfdfd72a698a0b8a0962ad843fb7688/docs/api.md#settings"
+                                alt="site de github" hreflang="EN" rel="noopener" behavior target="_blank">Github</a>
+                            et
+                            <a href="https://www.w3schools.com/tags/ref_canvas.asp" alt="site de W3schools"
+                                hreflang="EN" rel="noopener" behavior target="_blank"> W3schools</a>
+                        </p>
+                    </article>
+
+                </li>
+            </ul>
         </li>
-        <li></li>
+
+
+
+        <li>
+            <h2>Block 2</h2>
+            <ul>
+                <li>
+                    <h2>Transformation et Esquisse index.js</h2>
+                    <ul>
+                        <li>Utilisation de fill() qui coloris le motif.</li>
+                        <li>Utilisation de stroke() ne coloris pas le motif.</li>
+                        <li>Utilisation des fonctions translate() et rotate().</li>
+                        <li>Utilisation de save() et restore(). Chaque transforation sera avec au départ un e fonction
+                            save()
+                            et à la fin une restore().</li>
+                    </ul>
+
+                </li>
+            </ul>
+        </li>
         <li></li>
         <li></li>
     </ul>
